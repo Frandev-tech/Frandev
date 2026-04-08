@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>FranDev — Páginas Web para Empresas en Málaga</title>
+  <link rel="icon" href="favicon.png" type="image/png">
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=DM+Sans:wght@300;400;500;600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+<!-- NAV -->
+<nav>
+  <a class="nav-logo" href="#">Fran<span>Dev</span></a>
+  <ul class="nav-links">
+    <li><a href="#servicios">Servicios</a></li>
+    <li><a href="#proceso">Proceso</a></li>
+    <li><a href="#precios">Precios</a></li>
+    <li><a href="#contacto" class="nav-cta">Contactar</a></li>
+  </ul>
+  <button class="hamburger" id="hamburger" aria-label="Menú">
+    <span></span><span></span><span></span>
+  </button>
+</nav>
+
+<!-- MOBILE MENU -->
+<div class="mobile-menu" id="mobileMenu">
+  <a href="#servicios" onclick="closeMenu()">Servicios</a>
+  <a href="#proceso" onclick="closeMenu()">Proceso</a>
+  <a href="#precios" onclick="closeMenu()">Precios</a>
+  <a href="#contacto" onclick="closeMenu()">Contactar →</a>
+</div>
+
+<!-- HERO -->
+<section class="hero">
+  <div class="hero-text">
+    <p class="hero-eyebrow">Diseño Web · Málaga</p>
+    <h1>Tu empresa<br />merece estar<br /><em>en internet.</em></h1>
+    <p class="hero-desc">
+      Creo páginas web profesionales para negocios de Málaga que todavía no tienen presencia online. Rápidas, bonitas y listas para crecer.
+    </p>
+    <div class="hero-actions">
+      <a href="#contacto" class="btn-primary">Pedir presupuesto gratis</a>
+      <a href="#servicios" class="btn-outline">Ver servicios</a>
+    </div>
+  </div>
+
+  <div class="hero-visual">
+    <div class="browser-mock">
+      <div class="browser-bar">
+        <div class="browser-dots">
+          <span></span><span></span><span></span>
+        </div>
+        <div class="browser-url">tunegocio.es</div>
+      </div>
+      <div class="browser-content">
+        <div class="mock-header">
+          <div class="mock-logo"></div>
+          <div class="mock-nav">
+            <span></span><span></span><span></span>
+          </div>
+        </div>
+        <div class="mock-hero-block">
+          <div class="mock-h"></div>
+          <div class="mock-h short"></div>
+          <div class="mock-p mid"></div>
+          <div class="mock-p short"></div>
+          <div class="mock-btn"><div class="mock-btn-inner"></div></div>
+        </div>
+        <div class="mock-cards">
+          <div class="mock-card">
+            <div class="mock-card-icon"></div>
+            <div class="mock-card-line"></div>
+            <div class="mock-card-line short"></div>
+          </div>
+          <div class="mock-card">
+            <div class="mock-card-icon"></div>
+            <div class="mock-card-line"></div>
+            <div class="mock-card-line short"></div>
+          </div>
+          <div class="mock-card">
+            <div class="mock-card-icon"></div>
+            <div class="mock-card-line"></div>
+            <div class="mock-card-line short"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- WHY -->
+<section class="why">
+  <div class="reveal">
+    <p class="section-eyebrow">¿Por qué tener web?</p>
+    <h2 class="section-title">El 81% de los clientes busca online antes de comprar</h2>
+    <p class="section-sub">Si tu negocio no aparece en internet, estás perdiendo clientes sin saberlo. Una buena web trabaja por ti las 24 horas.</p>
+  </div>
+  <div class="why-grid reveal">
+    <div class="why-card">
+      <div class="why-number">01</div>
+      <h3>Visibilidad total</h3>
+      <p>Aparecer en Google cuando alguien busca tu servicio en Málaga es la mejor publicidad que existe — y es gratuita una vez que tienes la web.</p>
+    </div>
+    <div class="why-card">
+      <div class="why-number">02</div>
+      <h3>Credibilidad inmediata</h3>
+      <p>Una empresa con web profesional genera confianza desde el primer segundo. Sin web, muchos clientes eligen a tu competencia sin pensarlo.</p>
+    </div>
+    <div class="why-card">
+      <div class="why-number">03</div>
+      <h3>Abierto siempre</h3>
+      <p>Tu web muestra tus servicios, precios y contacto a cualquier hora, cualquier día. Tú descansas; ella trabaja.</p>
+    </div>
+  </div>
+</section>
+
+<!-- SERVICES -->
+<section id="servicios">
+  <div class="reveal">
+    <p class="section-eyebrow">Lo que ofrezco</p>
+    <h2 class="section-title">Servicios de diseño web</h2>
+    <p class="section-sub">Cada proyecto es único. Adapto la solución exactamente a lo que necesita tu negocio.</p>
+  </div>
+  <div class="services-grid reveal">
+    <div class="service-card">
+      <div class="service-icon">🖥️</div>
+      <h3>Página web corporativa</h3>
+      <p>Diseño a medida que representa tu empresa de forma profesional. Incluye secciones de servicios, sobre ti, galería y contacto.</p>
+    </div>
+    <div class="service-card">
+      <div class="service-icon">📱</div>
+      <h3>Diseño responsive</h3>
+      <p>Tu web se verá perfecta en cualquier dispositivo: móvil, tablet u ordenador. Siempre.</p>
+    </div>
+    <div class="service-card">
+      <div class="service-icon">🔍</div>
+      <h3>Optimización SEO</h3>
+      <p>Configuro la web para que Google la encuentre y la posicione bien en búsquedas locales de Málaga desde el día uno.</p>
+    </div>
+    <div class="service-card">
+      <div class="service-icon">⚡</div>
+      <h3>Web rápida y segura</h3>
+      <p>Webs ligeras que cargan en segundos, con certificado SSL incluido. Google premia la velocidad y tus clientes también.</p>
+    </div>
+    <div class="service-card">
+      <div class="service-icon">🛒</div>
+      <h3>Tienda online</h3>
+      <p>¿Quieres vender por internet? Creo tiendas completas con carrito, pagos y gestión de productos fácil de administrar.</p>
+    </div>
+    <div class="service-card">
+      <div class="service-icon">🔧</div>
+      <h3>Mantenimiento y soporte</h3>
+      <p>No te dejo solo tras la entrega. Ofrezco soporte continuado para actualizaciones, cambios y cualquier duda que surja.</p>
+    </div>
+  </div>
+</section>
+
+<!-- PROCESS -->
+<section id="proceso" class="process">
+  <div class="reveal" style="text-align:center;">
+    <p class="section-eyebrow">Cómo trabajo</p>
+    <h2 class="section-title">Simple y sin complicaciones</h2>
+    <p class="section-sub" style="margin:0 auto;">De la idea a la web publicada en pocos pasos. Sin tecnicismos, sin sorpresas.</p>
+  </div>
+  <div class="steps reveal">
+    <div class="step">
+      <div class="step-num">1</div>
+      <h3>Hablamos</h3>
+      <p>Me cuentas tu negocio y qué necesitas. Gratis y sin compromiso.</p>
+    </div>
+    <div class="step">
+      <div class="step-num">2</div>
+      <h3>Presupuesto</h3>
+      <p>Te envío una propuesta clara con precio y plazos. Sin letra pequeña.</p>
+    </div>
+    <div class="step">
+      <div class="step-num">3</div>
+      <h3>Diseño y desarrollo</h3>
+      <p>Creo tu web y te voy enseñando el avance. Tus cambios son bienvenidos.</p>
+    </div>
+    <div class="step">
+      <div class="step-num">4</div>
+      <h3>¡Publicada!</h3>
+      <p>Tu negocio ya está en internet. Te explico cómo actualizarla tú mismo.</p>
+    </div>
+  </div>
+</section>
+
+<!-- PRICING -->
+<section id="precios">
+  <div class="reveal" style="text-align:center;">
+    <p class="section-eyebrow">Precios</p>
+    <h2 class="section-title">Sin sorpresas</h2>
+    <p class="section-sub" style="margin:0 auto;">Precios adaptados a pequeños y medianos negocios. ¿No sabes cuál elegir? Escríbeme y te ayudo.</p>
+  </div>
+  <div class="pricing-grid reveal">
+    <div class="pricing-card">
+      <div class="pricing-plan">Básico</div>
+      <div class="pricing-price"><span class="pricing-from">desde </span>249€</div>
+      <p class="pricing-desc">Ideal para autónomos y pequeños negocios que necesitan presencia online rápida.</p>
+      <ul class="pricing-features">
+        <li>Hasta 4 secciones</li>
+        <li>Diseño responsive</li>
+        <li>Formulario de contacto</li>
+        <li>SSL incluido</li>
+        <li>Entrega en ~1 semana</li>
+      </ul>
+      <a href="#contacto" class="btn-outline-dark">Solicitar info</a>
+    </div>
+    <div class="pricing-card featured">
+      <div class="pricing-badge">Más popular</div>
+      <div class="pricing-plan">Profesional</div>
+      <div class="pricing-price"><span class="pricing-from">desde </span>499€</div>
+      <p class="pricing-desc">Para negocios que quieren destacar y ganar clientes online de verdad.</p>
+      <ul class="pricing-features">
+        <li>Páginas ilimitadas</li>
+        <li>Diseño a medida</li>
+        <li>SEO optimizado</li>
+        <li>Blog incluido</li>
+        <li>Google Analytics</li>
+        <li>Soporte 3 meses</li>
+      </ul>
+      <a href="#contacto" class="btn-featured">Solicitar info</a>
+    </div>
+    <div class="pricing-card">
+      <div class="pricing-plan">Tienda Online</div>
+      <div class="pricing-price"><span class="pricing-from">desde </span>699€</div>
+      <p class="pricing-desc">Vende tus productos por internet con una tienda completa y profesional.</p>
+      <ul class="pricing-features">
+        <li>Catálogo completo</li>
+        <li>Pasarela de pago</li>
+        <li>Gestión de pedidos</li>
+        <li>SEO para productos</li>
+        <li>Soporte 6 meses</li>
+      </ul>
+      <a href="#contacto" class="btn-outline-dark">Solicitar info</a>
+    </div>
+  </div>
+</section>
+
+<!-- CONTACT -->
+<section id="contacto" class="contact">
+  <div class="reveal">
+    <p class="section-eyebrow">Contacto</p>
+    <h2 class="section-title">¿Hablamos?</h2>
+    <p class="section-sub">
+      Cuéntame tu proyecto y te respondo en menos de 24 horas con un presupuesto sin compromiso.
+    </p>
+  </div>
+  <div class="contact-grid reveal">
+    <a href="mailto:Frandev1999@gmail.com" class="contact-item">
+      <div class="contact-item-icon">✉️</div>
+      <div class="contact-item-label">Email</div>
+      <div class="contact-item-value">Frandev1999@gmail.com</div>
+    </a>
+    <a href="tel:+34611450298" class="contact-item">
+      <div class="contact-item-icon">📞</div>
+      <div class="contact-item-label">Teléfono / WhatsApp</div>
+      <div class="contact-item-value">611 450 298</div>
+    </a>
+    <div class="contact-item">
+      <div class="contact-item-icon">📍</div>
+      <div class="contact-item-label">Ubicación</div>
+      <div class="contact-item-value">Málaga, España</div>
+    </div>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer>
+  <p>© 2025 FranDev · Diseño web en Málaga · <a href="mailto:Frandev1999@gmail.com">Frandev1999@gmail.com</a></p>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
